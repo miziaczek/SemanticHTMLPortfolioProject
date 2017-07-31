@@ -4,63 +4,183 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+  <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+
+
+  <script src="js.js"></script>
   <title>HTML Portfolio</title>
 </head>
 
 <body>
-<header>
 
-    <h1>Sergio Cruz</h1>
-    <h2>Application Developer</h2>
-<nav>
-    <ul >
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
-  </header>
-  <main>
-<section class="tagline">
 
-    <div class="content-wrapper">
-      <h3>A bit more about me</h3>
-      <p>Hey I am Sergio, I work for <a target="_blank" href="https://www.codeschool.com">Code School</a> and I love writing JavaScript!</p>
+<div id="55">
+
+
+  <header>
+    <div class="email">
+      <a>natalia.rebilas@gmail.com</a>
+
+
+      <a href="https://github.com/natalianowak"><img class="git" src="github-logo.png" border="0" alt="github"
+                                                     width="30" height="30"/></a>
+      <a href="https://www.linkedin.com/in/natalia-nowak-06552336/"><img class="linkedin" src="linkedin_logo.png"
+                                                                         alt="linkedin" width="30" height="30"/></a>
     </div>
-
-</section>
-
-<section class="skills">
-
-    <div class="content-wrapper">
-      <h3>Skills</h3>
-      <p>Here are some of the technologies I enjoy writing day-to-day:</p>
+    <a href="#55" id="gototop" title="Do góry"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+    <video autoplay muted loop>
+      <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/536/279739896.mp4.mp4">
+    </video>
+    <h1>Natalia Nowak</h1>
+    <h2>Junior Front-End Developer / Web developer</h2>
+    <div class="nav">
       <ul>
-        <li>HTML &amp; CSS</li>
-        <li>Node.js</li>
-        <li>React</li>
-        <li>Angular 2</li>
-        <li>Webpack</li>
+        <li><a href="#0" class="link active">Home</a></li>
+        <li><a href="#1" class="link">O mnie</a></li>
+        <li><a href="#2" class="link">Technologie</a></li>
+        <li><a href="#3" class="link">Projekty</a></li>
+        <li><a href="#4" class="link">Kontakt</a></li>
       </ul>
     </div>
-  </section>
-<section class="contact">
+    <img class="icons8-Sortuj-w-dół" width="48" height="48" src="icons8-Sortuj%20w%20dół-48.png">
 
-    <div class="content-wrapper">
-      <h3>How to contact me</h3>
-      <p>The easiest way to contact me is via twitter: <a target="_blank" href="https://twitter.com/hashtagserg">@hashtagserg</a></p>
-    </div>
-  </section>
+  </header>
 
-</main>
-<footer>
+</div>
 
-    <div class="content-wrapper">
-      <h3>Credits</h3>
-      <p>This portfolio was created using <a href='https://www.codeschool.com'>Code School's</a> <a href='https://github.com/codeschool/SemanticHTMLPortfolioProject'>Semantic HTML Portfolio Project</a> template.</p>
-    </div>
-  </footer>
+<div class="aboutme">
+  <div id="1">
+    <section class="tagline">
+      <div class="content-wrapper">
+        <h3>Programowaniem inetersuję się od 2 lat, w tym czasie poszerzałam wiedzę we własnym zakresie:</h3>
+        <ul>
+          <li>Zdobyłam Front End Development Certification na FreeCodeCamp</li>
+          <li>przeszam kursy na Coode School</li>
+          <li>ćwiczyłam algorytymy na CodingBat</li>
+        </ul>
 
+      </div>
+
+    </section>
+  </div>
+
+  <div id="2">
+    <section class="skills">
+
+      <div class="content-wrapper">
+        <!--<h3>Skills</h3>-->
+        <h3>Technologie</h3>
+        <p>Here are some of the technologies I enjoy writing day-to-day:</p>
+        <ul>
+          <div class="fourIcon">
+            <img class="icon" src="Badge_js-strict.svg" alt="JS Icon">
+            <img class="icon" src="HTML_Logo.png" alt="HTML Icon">
+            <img class="icon" src="css_LOGO.png" alt="CSS Icon">
+            <img class="icon" src="mysql-icon.png" alt="SQL Icon">
+          </div>
+          <div class="fourIcon">
+            <img class="icon" src="bootstrap_logo.png" alt="Bootstrap Icon">
+            <img class="icon" src="jquery_logo.png" alt="JQuery Icon">
+            <img class="icons" src="react2_logo.png" alt="React JS Icon">
+            <img class="icon" src="gitgit_logo.png" alt="Git Icon">
+
+          </div>
+
+        </ul>
+
+
+
+      </div>
+
+    </section>
+  </div>
+  <img class="icons8-Sortuj-w-dół2" width="48" height="48" src="icons8-Sortuj%20w%20dół-48.png">
+</div>
+
+<div class="aboutme2">
+  <div id="3">
+    <section class="contact">
+
+      <div class="content-wrapper">
+        <h3>Zealizowane projekty:</h3>
+
+
+        <div class="owl-carousel">
+
+
+          <div class="item2">
+            <a class="popup-text" href="#11">
+              <img class="staypro" src="stayproScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            </a>
+            <div id="11" class="mfp-hide white-popup-block popup-text">
+              <img class="staypro" src="stayproScreen.png">
+              <p>Projekt zlecony z uzyciem JQuery i Google Maps Api, z szblonu wykonananego przez grafika.</p>
+              <a href="https://natalianowak.github.io/michal/">>> Link <<</a>
+
+            </div>
+          </div>
+
+          <div class="item2">
+            <a class="popup-text" href="#12">
+              <img class="crossgame" src="crossgameScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            </a>
+            <div id="12" class="mfp-hide white-popup-block popup-text">
+              <img class="crossgame" src="crossgameScreen.png">
+              <p>Gra kolko-krzyzyk w technologii React.js</p>
+              <a href="https://natalianowak.github.io/reactCrossGame/">>> Link <<</a>
+            </div>
+          </div>
+        </div>
+
+
+    </section>
+</div>
+  </div>
+
+
+  <div id="4">
+    <footer>
+
+      <div class="content-wrapper">
+        <h3>Formularz kontaktowy</h3>
+
+        <form action="https://formspree.io/natalia.rebilas@gmail.com"
+              method="POST">
+          <p class="formName"></p>
+          <input type="text" name="_name" placeholder="Imie" id="Fname" class="feedback-input">
+          <p class="formEmail">
+          <input type="email" name="_replyto" placeholder="twoj e-mail" id="Femail" class="feedback-input">
+          </p>
+          <p class="formText">
+            <textarea type="text" name="name" placeholder="text" id="Ftext" class="feedback-input"></textarea>
+          </p>
+          <div class="submit">
+          <input type="submit" value="Send" class="" id="button-blue">
+            <div class="ease"></div>
+          </div>
+        </form>
+
+
+      </div>
+    </footer>
+  </div>
+</div>
 </body>
 
 </html>
