@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Convert a document to use semantic HTML.",
   "private": true,
+  "homepage":"https://natalianowak.github.io/HTMLPortfolioProject/",
   "scripts": {
     "start": "browser-sync start --server ./src --files ./src",
-    "test": "mocha --colors --compilers js:babel-register test/*.spec.js",
-    "test:watch": "watch-run -p 'src/index.html,test/portfolio.spec.js' npm run test",
     "deploy:github-pages": "git subtree push --prefix src origin gh-pages"
   },
   "author": "Adam Fortuna <adam@codeschool.com>",

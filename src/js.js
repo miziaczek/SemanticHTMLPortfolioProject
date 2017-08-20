@@ -1,21 +1,21 @@
 $(document).ready(function () {
 
-  $('.popup-text').magnificPopup({
-    // you may add other options here, e.g.:
-    preloader: true,
-
-    callbacks: {
-      open: function() {
-        // Will fire when this exact popup is opened
-        // this - is Magnific Popup object
-      },
-      close: function() {
-        console.log('dupa');
-        // Will fire when popup is closed
-      }
-      // e.t.c.
-    }
-  });
+  // $('.popup-text').magnificPopup({
+  //   // you may add other options here, e.g.:
+  //   preloader: true,
+  //
+  //   callbacks: {
+  //     open: function() {
+  //       // Will fire when this exact popup is opened
+  //       // this - is Magnific Popup object
+  //     },
+  //     close: function() {
+  //       console.log('dupa');
+  //       // Will fire when popup is closed
+  //     }
+  //     // e.t.c.
+  //   }
+  // });
 
 
   $('header a[href^="#"]').on('click', function (event) {
@@ -68,6 +68,7 @@ $(document).ready(function () {
       $('#text3').text('Zealizowane projekty:');
       $('#text31').text('Projekt zlecony z uzyciem JQuery i Google Maps Api, z szblonu wykonananego przez grafika.');
       $('#text32').text('Gra kolko-krzyzyk w technologii React.js');
+      $('#text33').text('Portfolio wynonane z użyciem JS, JQuery. Desin włsny.');
 
       $('#text4').text('Formularz kontaktowy');
       $('#Fname').attr("placeholder", "Imię");
@@ -93,6 +94,7 @@ $(document).ready(function () {
       $('#text3').text('My projects:');
       $('#text31').text('Commercial projects, made with JQuery and Google Maps Api. Template made by graphic designer.');
       $('#text32').text('Cross game in React.js');
+      $('#text33').text('Portfolio project made with JS, JQuery. Desing of my own.');
 
       $('#text4').text('Contact me');
       $('#Fname').attr("placeholder", "Name");
@@ -113,6 +115,65 @@ $(document).ready(function () {
   },function(){
     $(this).attr('src','linkedin_logowhite.png');
   });
+
+
+
+// Get the modal
+  var modal = document.getElementById('myModal');
+  var modal2 = document.getElementById('myModal2');
+  var modal3 = document.getElementById('myModal3');
+
+// Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+  var btn2 = document.getElementById("myBtn2");
+  var btn3 = document.getElementById("myBtn3");
+
+// Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+  var span2 = document.getElementsByClassName("close2")[0];
+  var span3 = document.getElementsByClassName("close3")[0];
+
+// When the user clicks the button, open the modal
+  btn.onclick = function() {
+    modal.style.display = "block";
+  };
+  btn2.onclick = function() {
+    modal2.style.display = "block";
+  };
+  btn3.onclick = function() {
+    modal3.style.display = "block";
+  };
+
+// When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+  span2.onclick = function() {
+    modal2.style.display = "none";
+  };
+  span3.onclick = function() {
+    modal3.style.display = "none";
+  };
+
+// When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+  window.onclick = function(event) {
+    if (event.target == modal2) {
+      modal2.style.display = "none";
+    }
+  }
+  window.onclick = function(event) {
+    if (event.target == modal3) {
+      modal3.style.display = "none";
+    }
+  }
+
+
+
 
 });
 
