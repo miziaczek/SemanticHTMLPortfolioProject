@@ -1,21 +1,22 @@
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: null // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+
 $(document).ready(function () {
 
-  // $('.popup-text').magnificPopup({
-  //   // you may add other options here, e.g.:
-  //   preloader: true,
-  //
-  //   callbacks: {
-  //     open: function() {
-  //       // Will fire when this exact popup is opened
-  //       // this - is Magnific Popup object
-  //     },
-  //     close: function() {
-  //       console.log('dupa');
-  //       // Will fire when popup is closed
-  //     }
-  //     // e.t.c.
-  //   }
-  // });
+
 
 
   $('header a[href^="#"]').on('click', function (event) {
@@ -57,13 +58,11 @@ $(document).ready(function () {
       $('#project').text('Projekty');
       $('#contact').text('Kontakt');
 
-      $('#text1').text('Programowaniem inetersuję się od 2 lat, w tym czasie poszerzałam wiedzę we własnym zakresie:');
-      $('#text11').text('Zdobyłam Front End Development Certification na FreeCodeCamp');
-      $('#text12').text('przeszam kursy na Coode School');
-      $('#text13').text('ćwiczyłam algorytymy na CodingBat');
+      $('#text1').text('Dwa lata temu zdecydowałam się rozpocząć naukę programowania. W tym czasie ukończyłam wiele kursów online(Freecodecamp, CodeSchool, Udemy, CodingBat, etc.) oraz poszerzałam swoją wiedzę czytając artykuły branżowe. Obecnie pracuję jako freelancer i chciałabym podjąć kolejne wyzwanie którym jest praca w zespole, dzięki czemu będę w stanie podnosić moje kwalifikacje.');
 
-      $('#text2').text('Technologie');
-      $('#text21').text('Technologie w których piszę:');
+
+      $('#text2').text('Technologie w których piszę:');
+
 
       $('#text3').text('Zealizowane projekty:');
       $('#text31').text('Projekt zlecony z uzyciem JQuery i Google Maps Api, z szblonu wykonananego przez grafika.');
@@ -88,8 +87,8 @@ $(document).ready(function () {
       $('#text12').text('Technologie w których piszę:');
       $('#text13').text('Technologie w których piszę:');
 
-      $('#text2').text('Technologies');
-      $('#text21').text('Here are some of the technologies I enjoy writing day-to-day:');
+      $('#text2').text('Here are some of the technologies I enjoy writing day-to-day:');
+
 
       $('#text3').text('My projects:');
       $('#text31').text('Commercial projects, made with JQuery and Google Maps Api. Template made by graphic designer.');
