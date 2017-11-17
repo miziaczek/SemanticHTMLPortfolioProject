@@ -5,17 +5,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!--<script language="javascript" type="text/javascript" src="wow.js"></script>-->
+  <!--<script language="javascript" type="text/javascript"src="js.js"></script>-->
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!--<link rel="Shortcut icon" href="N" />-->
+
+  <script src="wow.js"></script>
+  <script src="js.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="main.css">
 
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"></script>-->
-  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>-->
 
-  <script src="js.js"></script>
+
+
   <title>HTML Portfolio</title>
 </head>
 
@@ -38,10 +47,10 @@
       <button class="ang">EN</button>
     </div>
     <a href="#55" id="gototop" title="Do góry"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
-    <video autoplay muted loop>
-      <source src="https://d1235ca2z646oc.cloudfront.net/videos/processed/536/279739896.mp4.mp4">
+    <video class="video" autoplay muted loop>
+      <source src = "Background_08.mov">
     </video>
-    <h1>Natalia Nowak</h1>
+    <h1 class="wow fadeInUp">Natalia Nowak</h1>
     <h2>Junior Front-End Developer / Web developer</h2>
     <div class="nav">
       <ul>
@@ -68,12 +77,10 @@
   <div id="1">
     <section class="tagline">
       <div class="content-wrapper">
-        <h3 id="text1">Programowaniem inetersuję się od 2 lat, w tym czasie poszerzałam wiedzę we własnym zakresie:</h3>
-        <ul>
-          <li id="text11">Zdobyłam Front End Development Certification na FreeCodeCamp</li>
-          <li id="text12">przeszam kursy na Coode School</li>
-          <li id="text13">ćwiczyłam algorytymy na CodingBat</li>
-        </ul>
+        <p class="wow fadeInUp" id="text1">Dwa lata temu zdecydowałam się rozpocząć naukę programowania. W tym czasie ukończyłam wiele
+          kursów online(Freecodecamp, CodeSchool, Udemy, CodingBat, etc.) oraz poszerzałam swoją wiedzę
+          czytając artykuły branżowe. Obecnie pracuję jako freelancer i chciałabym podjąć kolejne wyzwanie
+          którym jest praca w zespole, dzięki czemu będę w stanie podnosić moje kwalifikacje.</p>
 
       </div>
 
@@ -90,28 +97,13 @@
 
       <div class="content-wrapper">
         <!--<h3>Skills</h3>-->
-        <h3 id="text2">Technologie</h3>
-        <p id="text21">Here are some of the technologies I enjoy writing day-to-day:</p>
-        <!--<ul>-->
-        <!--<div class="fourIcon">-->
-        <!--<img class="icon" src="Badge_js-strict.svg" alt="JS Icon">-->
-        <!--<img class="icon" src="HTML_Logo.png" alt="HTML Icon">-->
-        <!--<img class="icon" src="css_LOGO.png" alt="CSS Icon">-->
-        <!--<img class="icon" src="mysql-icon.png" alt="SQL Icon">-->
-        <!--</div>-->
-        <!--<div class="fourIcon">-->
-        <!--<img class="icon" src="bootstrap_logo.png" alt="Bootstrap Icon">-->
-        <!--<img class="icon" src="jquery_logo.png" alt="JQuery Icon">-->
-        <!--<img class="icons" src="react2_logo.png" alt="React JS Icon">-->
-        <!--<img class="icon" src="gitgit_logo.png" alt="Git Icon">-->
+        <h3 id="text2">Technologie w których piszę: </h3>
 
-        <!--</div>-->
 
-        <!--</ul>-->
         <div class="starsContener">
           <div class="fourStar1">
             <div class="skil">
-              <p>Java Script</p>
+              <p class="">Java Script</p>
               <div class="starCount">
                 <img class="star" src="icons8-Star%20Filled-50.png">
                 <img class="star" src="icons8-Star%20Filled-50.png">
@@ -229,7 +221,7 @@
         <!-- Trigger/Open The Modal -->
         <div class="item2">
           <a id="myBtn" class="popup-text" href="#11">
-            <img class="staypro" src="stayproScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <img class="staypro wow fadeInLeft" data-wow-delay="0.3s" src="stayproScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
           </a>
         </div>
         <!-- The Modal -->
@@ -249,7 +241,7 @@
         <!-- Trigger/Open The Modal -->
         <div class="item2">
           <a id="myBtn2" class="popup-text" href="#12">
-            <img class="crossgame" src="crossgameScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <img class="crossgame wow fadeInLeft" data-wow-delay="0.2s" src="crossgameScreen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
           </a>
         </div>
         <!-- The Modal -->
@@ -268,7 +260,7 @@
          <!--Trigger/Open The Modal -->
         <div class="item2">
           <a id="myBtn3" class="popup-text" href="#13">
-            <img  class="staypro" src="portfolio_screen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <img  class="staypro wow fadeInLeft" data-wow-delay="0.1s" src="portfolio_screen.png"><i class="fa fa-newspaper-o" aria-hidden="true"></i>
           </a>
         </div>
         <!-- The Modal -->
